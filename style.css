@@ -1,0 +1,212 @@
+body{
+    margin: 0 ;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+}
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black ;
+}
+
+header p{
+    margin-left: 100px;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 50%;
+
+}
+
+.navBar li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15pt;
+}
+
+/* ma description , cv et photo */
+
+
+.main > div:first-child{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.titre{
+    color:#739FE8;
+    font-weight: 700;
+    font-size: 50pt;
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description p{
+    font-weight: 200;
+    font-size: 20pt;
+}
+
+
+.description > div{
+    width: 80%;
+    margin: auto;
+}
+
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo > img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.btn {
+    background-color: #739FE8;
+    border: none;
+    color: white;
+    padding: 20px 35px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.social-icon{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 20%;
+}
+
+.social p{
+    font-weight: 600;
+    font-size: 17pt;
+    margin-bottom: 0;
+    margin-top: 60px;
+}
+
+.social-icon > li > img{
+    width: 70%;
+    cursor: pointer;
+}
+
+/* competences */
+
+.competences{
+    height: 100%;
+    background: linear-gradient(4.3deg, #739FE8 86%,white 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    
+}
+
+.competences h2{
+    font-weight: 900;
+    font-size: 40pt;
+    text-align: center;
+    margin-top: 130px;
+    
+}
+
+.competences  p{
+    text-align: center;
+    width: 40%;
+    margin: -22px auto;
+    background-color: #739FE8;
+    font-size: 20pt;
+    font-weight: 300;
+}
+
+.competences > div:nth-child(2){
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+.competences ul{
+    list-style: none;
+}
+
+.back div, .front div{
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 400px;
+    height: 280px;
+
+}
+
+.front li >img , .back li > img{
+    width: 50px;
+}
+
+
+/* CONTACT */
+
+.contact > div{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+    margin :100px auto;
+    width: 45%;
+}
+
+form div{
+    margin: 15px 0 15px 0;
+}
+
+label{
+    width: 250px;
+    display: inline-block;
+}
+
+input, textarea{
+    width: 400px;
+    
+}
+
+input{
+    height: 30px;
+}
+
+.end{
+    text-align: center;
+    border-top: 1px solid black;
+}
+
+
+input[type="submit"]{
+    text-align: center;
+    width: 20%;
+    background-color: #739FE8;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
